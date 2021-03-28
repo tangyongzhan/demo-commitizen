@@ -13,13 +13,13 @@
 ## 一、规范： Conventional Commits(约定式提交规范)
 
 1. 代码提交注释模版：
-```shell
-<type>[optional scope]: <subject>
-//空一行
-[optional body]
-//空一行
-[optional footer(s)]
-```
+    ```shell
+    <type>[optional scope]: <subject>
+    //空一行
+    [optional body]
+    //空一行
+    [optional footer(s)]
+    ```
 2. 详细说明：
 * type 的类别
     ```shell
