@@ -1,0 +1,26 @@
+{
+  "name": "demo-commitizen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "husky": "^5.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangyongzhan/demo-commitizen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tangyongzhan/demo-commitizen/issues"
+  },
+  "homepage": "https://github.com/tangyongzhan/demo-commitizen#readme"
+}
