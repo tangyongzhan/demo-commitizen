@@ -120,9 +120,11 @@ git cz 按步骤生成规范的提交
 
 ## vs-code 安装Commitizen 
 ```shell
+
 1. 安装插件
 2. command + shift + p 调出命令
 3. 输入Commitizen 可逐步生成规范的注释
+
 ```
 
 
