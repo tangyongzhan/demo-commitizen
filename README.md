@@ -83,4 +83,35 @@ yarn husky add .husky/commit-msg "yarn commitlint --edit $1"
 ```
 
  
+ ## commitizen 生成标注的提交规范
+ ```
+ npm install commitizen -g
+ ```
+
+
+
+2. 在package.json添加commitizen配置
+
+使用下方命令，会生成Conventional Changelog 的日志信息
+```
+commitizen init cz-conventional-changelog --save-dev --save-exact
+```
+package.json 会自动添加上方生成的配置。
+
+```
+"config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+},
+```
+
+ 3. husky的hooks配置，后续使用 git cz 来触发commitizen生成提交规范信息。
+ ```
+ "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  }
+ ```
 
