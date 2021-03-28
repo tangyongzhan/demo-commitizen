@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
-    "@commitlint/config-conventional": "^12.0.1"
+    "@commitlint/config-conventional": "^12.0.1",
+    "cz-conventional-changelog": "^3.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +23,15 @@
   "bugs": {
     "url": "https://github.com/tangyongzhan/demo-commitizen/issues"
   },
-  "homepage": "https://github.com/tangyongzhan/demo-commitizen#readme"
+  "homepage": "https://github.com/tangyongzhan/demo-commitizen#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+    }
+  }
 }
