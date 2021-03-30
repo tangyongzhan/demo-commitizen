@@ -118,6 +118,24 @@ git cz 按步骤生成规范的提交
 ```
 
 
+5. 生成日志
+```shell
+//安装生成的提交日志的cli
+npm install -g conventional-changelog 
+```
+
+```
+// 添加日志生成的命令
+"scripts": {
+  "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+},
+```
+
+```shell
+npm run changelog
+```
+
+
 ## vs-code 安装Commitizen 
 ```shell
 1. 安装插件
